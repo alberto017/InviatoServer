@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Inviatto Restaurante</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="slogan">No importa dónde se encuentre: ya sea en la comodidad de su casa, oficina o en la playa, lo encontraremos y le daremos de comer.</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tracking_order">Map</string>
+    <string name="title_activity_tracking_oder">Map</string>
+</resources>

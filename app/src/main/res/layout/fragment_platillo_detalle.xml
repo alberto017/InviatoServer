@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PlatilloDetalleFragment"
+    android:background="#ffffff">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblNombreDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Platillo"
+                    android:textColor="@color/downBackground"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lblTituloPrecioDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Precio:"
+                    android:textColor="@color/downBackground"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblIngredientesDetalle"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lblPrecioDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="valor"
+                    android:textColor="@color/downBackground"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toEndOf="@+id/lblTituloPrecioDetalle"
+                    app:layout_constraintTop_toBottomOf="@+id/lblIngredientesDetalle"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lblTituloDescuentoDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Descuento"
+                    android:textColor="@color/downBackground"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblIngredientesDetalle"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lblDescuentoDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="40dp"
+                    android:text="valor"
+                    android:textColor="@color/downBackground"
+                    android:textSize="22dp"
+                    app:layout_constraintStart_toEndOf="@+id/lblTituloDescuentoDetalle"
+                    app:layout_constraintTop_toBottomOf="@+id/lblIngredientesDetalle"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lblTituloIngredientesDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Ingredientes"
+                    android:textColor="@color/downBackground"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblNombreDetalle"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lblIngredientesDetalle"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="ingredientes"
+                    android:textColor="@color/downBackground"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblTituloIngredientesDetalle"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lblTituloCantidadDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Cantidad:"
+                    android:textColor="@color/downBackground"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblIngredientesDetalle"
+                    tools:ignore="MissingConstraints" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/spinnerCantidadDetalle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:textColor="@color/downBackground"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblTituloCantidadDetalle"
+                    app:textSize="6sp"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/btnSignActive"
+                app:expandedTitleMarginBottom="20dp"
+                app:expandedTitleMarginStart="15dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                app:expandedTitleTextAppearance="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/imgFoodDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:srcCompat="@drawable/dad" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</FrameLayout>

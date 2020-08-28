@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AgregarPromocionFragment"
+    android:id="@+id/flNewFood">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_bg">
+
+                <TextView
+                    android:id="@+id/lblTitle_newFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Agregar nueva promocion"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/rebaja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.536"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblTitle_newFood" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtNewFoodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:hint="Titulo"
+                    android:inputType="text"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="11"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="false" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtNewFoodDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:hint="Restaurante"
+                    android:inputType="text"
+                    android:lines="3"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtNewFoodName"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="11"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="false" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtNewFoodPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:hint="Precio"
+                    android:inputType="number"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtNewFoodDescription"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="11"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="false" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtNewFoodMenuID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:hint="Fecha limite"
+                    android:inputType="date"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtNewFoodPrice"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="11"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="false" />
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnAddFood"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="@color/btnSignUp"
+                    android:text="aceptar"
+                    android:textColor="#ffffff"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtNewFoodMenuID"
+                    app:shadowColor="@android:color/black"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="5dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

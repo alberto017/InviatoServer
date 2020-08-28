@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/title_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="No. Orden"
+                android:textColor="#111111"/>
+
+            <TextView
+                android:id="@+id/lblOrderItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:text="Titulo de Orden"
+                android:textColor="#111111"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblOrderItemStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|start"
+            android:textAllCaps="true"
+            android:text="Status"
+            android:textColor="@color/downBackground"/>
+
+        <TextView
+            android:id="@+id/lblOrderItemAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|start"
+            android:textAllCaps="true"
+            android:text="Direccion"/>
+
+        <TextView
+            android:id="@+id/lblOrderItemPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|start"
+            android:textAllCaps="true"
+            android:text="1234"/>
+
+        <TextView
+            android:id="@+id/lblOrderItemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|start"
+            android:textAllCaps="true"
+            android:text="Fecha"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
